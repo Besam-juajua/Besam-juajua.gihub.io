@@ -1,0 +1,270 @@
+/*我的作品*/
+.my-work{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.clr{
+	clear: both;
+}
+.wk-container{
+	width: 320px;
+	height: 210px;
+	position: relative;
+	border: 14px solid #1F9E93;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+/*数字选择的区域*/
+.wk-container label{
+	font-style: italic;
+	width: 80px;
+	height: 24px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 24px;
+	font-size: 20px;
+	float:left;
+	position: relative;
+	margin-top:175px;
+	text-align: center;
+	z-index: 1000;
+}
+/*数字的圆背景*/
+.wk-container label:before{
+	content:'';
+	width: 24px;
+	height: 24px;
+	background: rgba(130,195,217,0.9);
+	position: absolute;
+	left: 50%;
+	margin-left: -12px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
+	z-index:-1;
+}
+/*图片中的白色分割线*/
+.wk-container label:after{
+	width: 1px;
+	height: 210px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Miwkosoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -11px;
+	right: 0px;
+}
+/*选到哪个数字，哪个数字的颜色就变化*/
+.wk-container input.wk-selector-img-1:checked ~ label.wk-label-img-1,
+.wk-container input.wk-selector-img-2:checked ~ label.wk-label-img-2,
+.wk-container input.wk-selector-img-3:checked ~ label.wk-label-img-3,
+.wk-container input.wk-selector-img-4:checked ~ label.wk-label-img-4,
+.wk-container input.wk-selector-img-5:checked ~ label.wk-label-img-5,
+.wk-container input.wk-selector-img-6:checked ~ label.wk-label-img-6,
+.wk-container input.wk-selector-img-7:checked ~ label.wk-label-img-7,
+.wk-container input.wk-selector-img-8:checked ~ label.wk-label-img-8{
+	color: #68abc2;
+}
+/*选到哪个数字，哪个数字的背景和阴影就变化*/
+.wk-container input.wk-selector-img-1:checked ~ label.wk-label-img-1:before,
+.wk-container input.wk-selector-img-2:checked ~ label.wk-label-img-2:before,
+.wk-container input.wk-selector-img-3:checked ~ label.wk-label-img-3:before,
+.wk-container input.wk-selector-img-4:checked ~ label.wk-label-img-4:before,
+.wk-container input.wk-selector-img-5:checked ~ label.wk-label-img-5:before,
+.wk-container input.wk-selector-img-6:checked ~ label.wk-label-img-6:before,
+.wk-container input.wk-selector-img-7:checked ~ label.wk-label-img-7:before,
+.wk-container input.wk-selector-img-8:checked ~ label.wk-label-img-8:before{
+	background: #fff;
+	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+}
+/*radio的选择形式，radio都不显示*/
+.wk-container input{
+	display: none;
+}
+.wk-bgimg{
+	width: 320px;
+	height: 210px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.wk-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.wk-bgimg div{
+	width: 80px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.wk-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: -80px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+/*点击哪个数字，就显示那张图片背景*/
+.wk-container input.wk-selector-img-1:checked ~ .wk-bgimg-1,
+.wk-bgimg div span:nth-child(1){
+	background-image: url(../images/work1.jpg);
+}
+.wk-container input.wk-selector-img-2:checked ~ .wk-bgimg-1,
+.wk-bgimg div span:nth-child(2){
+	background-image: url(../images/work2.jpg);
+}
+.wk-container input.wk-selector-img-3:checked ~ .wk-bgimg-1,
+.wk-bgimg div span:nth-child(3){
+	background-image: url(../images/work3.jpg);
+}
+.wk-container input.wk-selector-img-4:checked ~ .wk-bgimg-1,
+.wk-bgimg div span:nth-child(4){
+	background-image: url(../images/work4.jpg);
+}
+.wk-container input.wk-selector-img-5:checked ~ .wk-bgimg-2,
+.wk-bgimg div span:nth-child(1){
+	background-image: url(../images/work5.jpg);
+}
+.wk-container input.wk-selector-img-6:checked ~ .wk-bgimg-2,
+.wk-bgimg div span:nth-child(2){
+	background-image: url(../images/work6.jpg);
+}
+.wk-container input.wk-selector-img-7:checked ~ .wk-bgimg-2,
+.wk-bgimg div span:nth-child(3){
+	background-image: url(../images/work7.jpg);
+}
+.wk-container input.wk-selector-img-8:checked ~ .wk-bgimg-2,
+.wk-bgimg div span:nth-child(4){
+	background-image: url(../images/work8.jpg);
+}
+/*四个span的分img的四等分*/
+.wk-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.wk-bgimg div:nth-child(2) span{
+	background-position: -80px 0px;
+}
+.wk-bgimg div:nth-child(3) span{
+	background-position: -160px 0px;
+}
+.wk-bgimg div:nth-child(4) span{
+	background-position: -240px 0px;
+}
+/*图片过渡效果离开*/
+.wk-container input:checked ~ .wk-bgimg div span{
+	-webkit-animation: worksSlide 0.6s ease-in-out;
+	-moz-animation: worksSlide 0.6s ease-in-out;
+	-o-animation: worksSlide 0.6s ease-in-out;
+	-ms-animation: worksSlide 0.6s ease-in-out;
+	animation: worksSlide 0.6s ease-in-out;
+}
+@-webkit-keyframes worksSlide{
+	0%{ left: 0px; }
+	100%{ left: 80px; }
+}
+@-moz-keyframes worksSlide{
+	0%{ left: 0px; }
+	100%{ left: 80px; }
+}
+@-o-keyframes worksSlide{
+	0%{ left: 0px; }
+	100%{ left: 80px; }
+}
+@-ms-keyframes worksSlide{
+	0%{ left: 0px; }
+	100%{ left: 80px; }
+}
+@keyframes worksSlide{
+	0%{ left: 0px; }
+	100%{ left: 80px; }
+}
+/*选择哪个数字，哪张图片的四部分就都移到正中间*/
+.wk-container input.wk-selector-img-1:checked ~ .wk-bgimg div span:nth-child(1),
+.wk-container input.wk-selector-img-2:checked ~ .wk-bgimg div span:nth-child(2),
+.wk-container input.wk-selector-img-3:checked ~ .wk-bgimg div span:nth-child(3),
+.wk-container input.wk-selector-img-4:checked ~ .wk-bgimg div span:nth-child(4),
+.wk-container input.wk-selector-img-5:checked ~ .wk-bgimg div span:nth-child(1),
+.wk-container input.wk-selector-img-6:checked ~ .wk-bgimg div span:nth-child(2),
+.wk-container input.wk-selector-img-7:checked ~ .wk-bgimg div span:nth-child(3),
+.wk-container input.wk-selector-img-8:checked ~ .wk-bgimg div span:nth-child(4)
+{
+	-webkit-transition: left 0.5s ease-in-out;
+	-moz-transition: left 0.5s ease-in-out;
+	-o-transition: left 0.5s ease-in-out;
+	-ms-transition: left 0.5s ease-in-out;
+	transition: left 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	left: 0px;
+	z-index: 10;
+}
+/*图片标题和描述*/
+.wk-titles h3{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	z-index: 10000;
+	opacity: 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+.wk-titles h3 span:nth-child(1){
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 24px;
+	display: block;
+	letter-spacing: 4px;
+}
+.wk-titles h3 span:nth-child(2){
+	letter-spacing: 0px;
+	display: block;
+	background: rgba(104,171,194,0.9);
+	font-size: 12px;
+	padding: 10px;
+	font-style: italic;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+/*选择哪个数字，那张图片的标题和描述的透明度就变为1*/
+.wk-container input.wk-selector-img-1:checked ~ .wk-titles h3:nth-child(1),
+.wk-container input.wk-selector-img-2:checked ~ .wk-titles h3:nth-child(2),
+.wk-container input.wk-selector-img-3:checked ~ .wk-titles h3:nth-child(3),
+.wk-container input.wk-selector-img-4:checked ~ .wk-titles h3:nth-child(4),
+.wk-container input.wk-selector-img-5:checked ~ .wk-titles h3:nth-child(1),
+.wk-container input.wk-selector-img-6:checked ~ .wk-titles h3:nth-child(2),
+.wk-container input.wk-selector-img-7:checked ~ .wk-titles h3:nth-child(3),
+.wk-container input.wk-selector-img-8:checked ~ .wk-titles h3:nth-child(4){
+	opacity: 1;
+}
+@media swkeen and (max-width: 768px) {
+	.wk-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 160px;
+		z-index: 1000;
+		position: relative;
+	}
+	.wk-container label{
+		display: none;
+	}
+}
