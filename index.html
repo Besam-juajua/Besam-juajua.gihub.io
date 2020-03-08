@@ -1,243 +1,380 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<title>Page Transitions with CSS3</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Your name" />
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/works.css" />
-		<link rel="stylesheet" type="text/css" href="css/contact.css" />
-	</head>
-	<body>
-				
-		<!-- Home -->
-		<section id="home" class="content">
-			<div class="main-desc">
-				<span class="main-desc-span"></span>
-				<h2>Hello，I'm Besam-juajua</h2>
-				<i>无论你在什么时候开始,重要的是开始之后就不要停止</i>
-				<p>我叫 * * *</p>
-				<p>2020本科应届毕业生</p>
-				<p>r@besam.com</p>
-			</div>
-		</section>
-		<!-- /Home -->
-		
-		<!-- About me -->
-		<section id="about" class="panel">
-			<div class="content">
-				<!-- 年龄-学历-坐标-状态 -->
-				<div class="data">
-					<div class="data-age">
-						<div class="data-icon">
-							<span class="iconfont icon-age"></span>
-						</div>
-						<div class="data-word">年龄/28</div>
-					</div>
-					<div class="data-edu">
-						<div class="data-icon">
-							<span class="iconfont icon-edu-line"></span>
-						</div>
-						<div class="data-word">学历/本科</div>
-					</div>
-					<div class="data-location">
-						<div class="data-icon">
-							<span class="iconfont icon-zuobiao"></span>
-						</div>
-						<div class="data-word">坐标/深圳</div>
-					</div>
-					<div class="data-state">
-						<div class="data-icon">
-							<span class="iconfont icon-zhuangtai"></span>
-						</div>
-						<div class="data-word">状态/离职</div>
-					</div>
-				</div>
-				<div class="person-desc">你好，我叫***，****专业，大学期间，主修路由与交换和网络安全辅修C、java，虽喜欢网络，但更多的是被炫酷的前端所吸引，因此自学前端，立志成为一名优秀的前端工程师，通过长时间的努力，如今具备独立开发网页的能力，如响应式页面，移动端页面，pc端页面，熟悉前后端分离，配合后台人员实现产品前端界面效果和功能</div>
-			</div>
-		</section>
-		<!-- /About me -->
-		
-		<!-- Skill -->
-		<section id="skill" class="panel">
-			<div class="content">
-				Skill
-			</div>
-		</section>
-		<!-- /Skill -->
-		
-		<!-- Experience -->
-		<section id="experience" class="panel">
-			<div class="content">
-				Experience
-			</div>
-		</section>
-		<!-- /Experience -->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Besam">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+    <meta name="Keywords" content="林志雄，Besam，web前端，个人简历，前端个人简历，Besam的个人简历，林志雄的简历，前端开发，web前端开发，前端工程师，前端学习，招聘，应届毕业生，web开发">
+    <meta name="description" content="林志雄（Besam）个人简历，职业web前端工程师。">
+    <title>Besam Resume</title>
+    <link rel="shortcut icon " type="images/x-icon" href="../resume/images/icon.ico">
+    <link rel="stylesheet" href="../resume/css/reset.css">
+    <link rel="stylesheet" href="../resume/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../resume/css/index.css" />
+    <script>
+        (function (doc, win) {
+            var recalc = function() {
+                var wH = window.innerHeight; // 当前窗口的高度
+                var wW = window.innerWidth; // 当前窗口的宽度
+                var whdef = 100 / 1366; // 表示1366的设计图,使用100PX的默认值
+                if (wW > 1400) {
+                    var rem = wW * whdef; // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+                    var html = document.documentElement;
+                    html.style.fontSize = rem + "px"; //适用于PC网站
+                } else {
+                    var rem = 1400 * whdef;
+                    var html = document.documentElement;
+                    html.style.fontSize = rem + "px";
+                }
+            }
+            win.addEventListener('resize', recalc, false);
+            recalc();
+        })(document, window);
+    </script>
+</head>
 
-		<!-- Works -->
-		<section id="works" class="panel">
-			<div class="content">
-				<div class="my-work">
-					<!-- works_1 -->
-					<div class="wk-container wk-container1">				
-						<input id="select-img-1" name="radio-set-1" type="radio" class="wk-selector-img-1" checked/>
-						<label for="select-img-1" class="wk-label-img-1">1</label>
-						
-						<input id="select-img-2" name="radio-set-1" type="radio" class="wk-selector-img-2" />
-						<label for="select-img-2" class="wk-label-img-2">2</label>
-						
-						<input id="select-img-3" name="radio-set-1" type="radio" class="wk-selector-img-3" />
-						<label for="select-img-3" class="wk-label-img-3">3</label>
-						
-						<input id="select-img-4" name="radio-set-1" type="radio" class="wk-selector-img-4" />
-						<label for="select-img-4" class="wk-label-img-4">4</label>
-						
-						<div class="clr"></div>	
-						<div class="wk-bgimg wk-bgimg-1">
-							<div>
-								<span>Slice 1 - Image 1</span>
-								<span>Slice 1 - Image 2</span>
-								<span>Slice 1 - Image 3</span>
-								<span>Slice 1 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 2 - Image 1</span>
-								<span>Slice 2 - Image 2</span>
-								<span>Slice 2 - Image 3</span>
-								<span>Slice 2 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 3 - Image 1</span>
-								<span>Slice 3 - Image 2</span>
-								<span>Slice 3 - Image 3</span>
-								<span>Slice 3 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 4 - Image 1</span>
-								<span>Slice 4 - Image 2</span>
-								<span>Slice 4 - Image 3</span>
-								<span>Slice 4 - Image 4</span>
-							</div>
-						</div>
-						<div class="wk-titles">
-							<h3><span>Serendipity</span><span>What you've been dreaming of</span></h3>
-							<h3><span>Adventure</span><span>Where the fun begins</span></h3>
-							<h3><span>Nature</span><span>Unforgettable eperiences</span></h3>
-							<h3><span>Serenity</span><span>When silence touches nature</span></h3>
-						</div>
-					</div><!-- works_1 end-->
-					<!-- works_2 -->
-					<div class="wk-container wk-container2">				
-						<input id="select-img-5" name="radio-set-2" type="radio" class="wk-selector-img-5" checked/>
-						<label for="select-img-5" class="wk-label-img-5">5</label>
-						
-						<input id="select-img-6" name="radio-set-2" type="radio" class="wk-selector-img-6" />
-						<label for="select-img-6" class="wk-label-img-6">6</label>
-						
-						<input id="select-img-7" name="radio-set-2" type="radio" class="wk-selector-img-7" />
-						<label for="select-img-7" class="wk-label-img-7">7</label>
-						
-						<input id="select-img-8" name="radio-set-2" type="radio" class="wk-selector-img-8" />
-						<label for="select-img-8" class="wk-label-img-8">8</label>
-						
-						<div class="clr"></div>	
-						<div class="wk-bgimg wk-bgimg-2">
-							<div>
-								<span>Slice 1 - Image 1</span>
-								<span>Slice 1 - Image 2</span>
-								<span>Slice 1 - Image 3</span>
-								<span>Slice 1 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 2 - Image 1</span>
-								<span>Slice 2 - Image 2</span>
-								<span>Slice 2 - Image 3</span>
-								<span>Slice 2 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 3 - Image 1</span>
-								<span>Slice 3 - Image 2</span>
-								<span>Slice 3 - Image 3</span>
-								<span>Slice 3 - Image 4</span>
-							</div>
-							<div>
-								<span>Slice 4 - Image 1</span>
-								<span>Slice 4 - Image 2</span>
-								<span>Slice 4 - Image 3</span>
-								<span>Slice 4 - Image 4</span>
-							</div>
-						</div>
-						<div class="wk-titles">
-							<h3><span>Serendipity</span><span>What you've been dreaming of</span></h3>
-							<h3><span>Adventure</span><span>Where the fun begins</span></h3>
-							<h3><span>Nature</span><span>Unforgettable eperiences</span></h3>
-							<h3><span>Serenity</span><span>When silence touches nature</span></h3>
-						</div>
-					</div><!-- works_2 end-->
-		    </div>
-			</div>
-		</section>
-		<!-- /Works -->
+<body>
+    <!-- <img src="../?anti=resume/images/ab.jpg" alt="ab.jpg"> -->
+    <!-- 侧滑栏 -->
+    <div class="nav-btn toggle-nav"><span class="icon iconfont icon-menu"></span></div>
+    <div class="mask toggle-nav hide"></div>
+    <aside class="slide-nav">
+        <nav class="nav-wrap">
+            <!-- <img src="../resume/images/line_bg.png" width='260px' height='626px'> -->
+            <ul class="nav-list">
+                <li data-index='0' class="active">
+                    <span>首页</span>
+                </li>
+                <li data-index='1'>
+                    <span>关于我</span>
+                </li>
+                <li data-index='2'>
+                    <span>实习过往</span>
+                </li>
+                <li data-index='3'>
+                    <span>技能掌握</span>
+                </li>
+                <li data-index='4'>
+                    <span>项目作品</span>
+                </li>
+                <li data-index='5'>
+                    <span>联系我</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div id="container">
+        <!-- 第一页 -->
+        <div class="section main">
+            <div class="section-container">
+                <blockquote>
+                    <h3>人生的价值,即以其人对于当代所作的工作为尺度</h3>
+                    <p>
+                        The value of life, that is, the person
+                        for
+                        the contemporary work to do as a measure.
+                    </p>
+                </blockquote>
+                <div class="main-content">
+                    <div class="main-title">
+                        <div class='left-line'></div>
+                        <div class='title'>个人简历</div>
+                        <div class='right-line'></div>
+                    </div>
+                    <h2>Hello, I'm Besam</h2>
+                    <div class="btn-group">
+                        <button>开始浏览</button>
+                        <button>联系我</button>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <div class="icon iconfont icon-down" style='margin-bottom: -16px'></div>
+                <div class="icon iconfont icon-down"></div>
+            </div>
+        </div>
+        <!-- 第二页 -->
+        <div class="section about">
+            <div class="section-container">
+                <div class="about-content">
+                    <img src="../resume/images/avatar.png">
+                    <p>
+                        <strong>-幸会，我是 Besam ！</strong><br>
+                        web前端攻城狮。打造一款成功的产品离不开持之以恒的照料，能成为你的搭档创造出别具一格的作品，我倍感荣幸。
+                        <br>					
+                        <strong>-我能效劳</strong><br>					
+                        MVVM前端模块化开发，以Vue or React开发小程序、移动端、pc端应用<br>
+                        <strong>-关于我</strong><br>				
+                        坐标广州。刚离职于广州云徙科技有限公司，前端攻城狮，主要从事电商网站和小程序开发。技术栈React+Es6+Next.js+Antd & Vue+Es6+Elementui
+                        <br>
+                        不浮躁，执行力，学习能力都棒棒哒！目前，能做点粗糙设计
+                    </p>
+                </div>
+            </div>
+            <div class="next">
+                <div class="icon iconfont icon-down" style='margin-bottom: -16px'></div>
+                <div class="icon iconfont icon-down"></div>
+            </div>
+        </div>
+        <!-- 第三页 -->
+        <div class="section internship">
+            <div class="section-container">
+                <div class="int-before">
+                    <h2>实习过往</h2>
+                </div>
+                <div class='line-start'>
+                    <div class="dot">
+                        <div class="dot-content">
+                            <label>2019.02 - 2019.10</label>
+                            <h3>梅州市玖零网络文化发展有限公司</h3>
+                            <p>负责公司 web 端、webapp、小程序等前端开发</p>
+                            <p>维护、迭代公司自研产品“快捎”小程序</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='line-end'>
+                    <div class="dot">
+                        <div class="dot-content">
+                            <label>2019.10 - 2020.03</label>
+                            <h3>广州云徙科技有限公司</h3>
+                            <p>负责公司项目“三生商城”移动端开发，对接后台</p>
+                            <p>维护、迭代“完美商城”移动端和pc端</p>
+                        </div>
+                    </div>
+                    <div class="dot">
+                        <div class="dot-content">
+                            <label>2020.03 - ···</label>
+                            <h3>···</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <div class="icon iconfont icon-down" style='margin-bottom: -16px'></div>
+                <div class="icon iconfont icon-down"></div>
+            </div>
+        </div>
+        <!-- 第四页 -->
+        <div class='section skill'>
+            <div class='section-container'>
+                <div class='skill-title'>
+                    <div class='left-line'></div>
+                    <h2>技能掌握</h2>
+                    <div class='right-line'></div>
+                </div>
+                <ul class='skill-list'>
+                    <li class='item-group'>
+                        <div class="lg-item">
+                            <h4>html5/css3</h4>
+                            <p>86%</p>
+                            <div class="lg-percent"></div>
+                        </div>
+                        <div class="sm-item">
+                            <div>
+                                <h4>js/es6</h4>
+                                <p>82%</p>
+                                <div class="sm-percent"></div>
+                            </div>
+                            <div>
+                                <h4>node.js</h4>
+                                <p>60%</p>
+                                <div class="sm-percent"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='item-group'>
+                        <div class="sm-item">
+                            <div>
+                                <h4>next.js</h4>
+                                <p>76%</p>
+                                <div class="sm-percent"></div>
+                            </div>
+                            <div>
+                                <h4>antd</h4>
+                                <p>90%</p>
+                                <div class="sm-percent"></div>
+                            </div>
+                        </div>
+                        <div class="lg-item lg-center">
+                            <h4>react</h4>
+                            <p>76%</p>
+                            <div class="lg-percent"></div>
+                        </div>
+                    </li>
+                    <li class='item-group'>
+                        <div class="lg-item lg-last">
+                            <h4>vue</h4>
+                            <p>86%</p>
+                            <div class="lg-percent"></div>
+                        </div>
+                        <div class="sm-item">
+                            <div>
+                                <h4>webpack</h4>
+                                <p>60%</p>
+                                <div class="sm-percent"></div>
+                            </div>
+                            <div class="sm-last">
+                                <p class='more'>...</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="next">
+                <div class="icon iconfont icon-down" style='margin-bottom: -16px'></div>
+                <div class="icon iconfont icon-down"></div>
+            </div>
+        </div>
+        <!-- 第五页 -->
+        <div class="section worker">
+            <div class="section-container">
+                <div class="worker-title">
+                    <div class='left-line'></div>
+                    <h2>我的作品</h2>
+                    <div class='right-line'></div>
+                </div>
+                <div class="worker-page show left">
+                    <ul class="worker-list">
+                         <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg2.png">
+                                <p>2019.07</p>
+                                <p>2019.08</p>
+                            </div>
+                            <div class="code-box">
+                                <img src="../resume/images/yonxing.jpg">
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>汽车后市场（小程序）</h4>
+                        </li>
+                        <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg2.png">
+                                <p>2019.10</p>
+                                <p>2019.12</p>
+                            </div>
+                            <div class="code-box">
+                                <img src="../resume/images/youcong.png">
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>油葱pc商城</h4>
+                        </li>
+                        <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg2.png">
+                                <p>2019.04</p>
+                                <p>2019.06</p>
+                            </div>
+                            <div class="code-box">
+                                <img src="../resume/images/yiyi.png">
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>伊伊同行（webapp）</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="worker-page">
+                    <ul class="worker-list">
+                        <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg3.png">
+                                <p>2019.07</p>
+                                <p>2019.08</p>
+                            </div>
+                            <div class="code-box">
+                                <img src="../resume/images/yixuan.jpg">
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>屹选商城（小程序）</h4>
+                        </li>
+                        <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg3.png">
+                                <p>2019.08</p>
+                                <p>2019.09</p>
+                            </div>
+                            <div class="code-box">
+                                <p>小程序搜索“俊耀充电平台”</p>
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>俊耀充电平台（小程序）</h4>
+                        </li>
+                        <li>
+                            <div class='paopao-box'>
+                                <img src="../resume/images/worker_bg2.png">
+                                <p>2020.01</p>
+                                <p>2020.~</p>
+                            </div>
+                            <div class="code-box">
+                                <p>开发期，暂未上线</p>
+                            </div>
+                            <img src="../resume/images/down_bg.png" class='down-bg'>
+                            <h4><span></span>三生商城（移动端）</h4>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class='page-btn'>
+                <button class='active' data-page='1'>1</button>
+                <button data-page='2'>2</button>
+            </div> 
+            <div class="next">
+                <div class="icon iconfont icon-down" style='margin-bottom: -16px'></div>
+                <div class="icon iconfont icon-down"></div>
+            </div>
+        </div>
+        <!-- 第六页 -->
+        <div class="section link">
+            <div class="section-container">
+                <div class="link-title">
+                    <div class='left-line'></div>
+                    <h2>联系我</h2>
+                    <div class='right-line'></div>
+                </div>
+                <div class="link-box">
+                    <ul>
+                        <li>
+                            <span class="icon iconfont icon-person"></span>
+                            姓名：林志雄
+                        </li>
+                        <li>
+                            <span class="icon iconfont icon-wechat"></span>
+                            微信：CCNA1987
+                        </li>
+                        <li>
+                            <span class="icon iconfont icon-phone"></span>
+                            联系电话：17875306374
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="icon iconfont icon-address"></span>
+                            地址：广州市天河区
+                        </li>
+                        <li>
+                            <span class="icon iconfont icon-github"></span>
+                            Github：besam-juajua
+                        </li>
+                        <li>
+                            <span class="icon iconfont icon-email"></span>
+                            电子邮箱：1695744322@qq.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="sentense">前端之路 -- 多有良师益友，学他之所长，献己之所能</div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Contact me -->
-		<section id="contact" class="panel">
-			<div class="content">
-				<div class="contact-box">
-					<div class="contact-top-border"></div>
-					<h1><span>CONTACT</span>FOR ME</h1>
-					<div class="contact-word">
-						<div class="h2"><span>灵感</span><span>代码</span><span>梦想</span><span>未来</span></div>
-						<div class="word">
-							学习是一个充实愉悦的过程</br>
-							喜欢尝试，期待新鲜事物</br>
-							前端即兴趣，兴趣即未来</br>
-							行路有良友，便是捷径</br>
-							期待有机会与您共事！
-						</div>
-						<div class="contact-github">
-							<a href=""><i class="iconfont icon-github"></i><span>github</span></a>
-							<a href=""><i class="iconfont icon-weixin"></i><span>wechat</span></a>
-							<a href=""><i class="iconfont icon-qq"></i><span>QQ</span></a>
-							<a href=""><i class="iconfont icon-email"></i><span>E-Mail</span></a>
-							<a href=""><i class="iconfont icon-sina"></i><span>webo</span></a>
-							<a href=""><i class="iconfont icon-Phone-FontAwesome"></i><span>phone</span></a>
-						</div>
-					</div>
-					<div class="contact-bottom-border"></div>
-				</div>
-			</div>
-		</section>
-		<!-- /Contact me -->
-		
-		<!-- Header with Navigation -->
-		<nav id="header">
-			<ul id="navigation">
-				<li><a id="link-home" class="nav-active" href="#home">首页</a></li>
-				<li><a id="link-about" href="#about">自我概述</a></li>
-				<li><a id="link-skill" href="#skill">技能掌握</a></li>
-				<li><a id="link-experience" href="#experience">我的经历</a></li>
-				<li><a id="link-works" href="#works">我的作品</a></li>
-				<li><a id="link-contact" href="#contact">联系方式</a></li>
-			</ul>
-		</nav>
-		
-		<!-- 个人简历模块 -->
-		<div class="tip">
-			个简人历
-		</div><!--/ 个人简历模块 -->
+    <script>
+        window.navShow = false;
+    </script>
+    <script type="text/javascript" src="../resume/js/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../resume/js/jquery/pageswitch.js"></script>
+    <script type="text/javascript" src="../resume/js/index.js"></script>
+</body>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/index.js"></script>
-	</body>
 </html>
